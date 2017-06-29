@@ -134,6 +134,7 @@
 		62E5E6FF1F04E095006638AF /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		62E5E7061F04E0B3006638AF /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E5E7131F04E0CF006638AF /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E5E74A1F04FA18006638AF /* KissXML.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = KissXML.modulemap; sourceTree = "<group>"; };
 		D94131BA1E5CEBE700189BD5 /* KissXMLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXMLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94131D31E5CEC8300189BD5 /* KissXMLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXMLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94131EC1E5CECC700189BD5 /* KissXMLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXMLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +249,7 @@
 				0DCD8DE31E54A3C6001D9832 /* KissXML.h */,
 				62BA48A91F044839009F6D64 /* KissXMLSwift.h */,
 				0DCD8DCE1E54A3A3001D9832 /* Info.plist */,
+				62E5E74A1F04FA18006638AF /* KissXML.modulemap */,
 			);
 			path = KissXML;
 			sourceTree = SOURCE_ROOT;
@@ -879,6 +881,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -889,6 +892,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -900,6 +904,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -909,6 +914,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -917,6 +923,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -925,6 +932,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -933,6 +941,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -943,6 +952,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -953,6 +963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = watchos;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -963,6 +974,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				MODULEMAP_FILE = KissXML/KissXML.modulemap;
 				SDKROOT = watchos;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -973,6 +985,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
@@ -983,6 +996,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
@@ -993,6 +1007,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
@@ -1005,6 +1020,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
@@ -1017,6 +1033,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = watchos;
 				SWIFT_VERSION = 3.0;
@@ -1029,6 +1046,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.robbiehanson.swift.$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(inherited)Swift";
 				SDKROOT = watchos;
 				SWIFT_VERSION = 3.0;
@@ -1074,6 +1092,7 @@
 				62E5E6EF1F04DFE7006638AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62E5E70B1F04E0B3006638AF /* Build configuration list for PBXNativeTarget "KissXML (tvOS)" */ = {
 			isa = XCConfigurationList;
@@ -1082,6 +1101,7 @@
 				62E5E70D1F04E0B3006638AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62E5E7181F04E0CF006638AF /* Build configuration list for PBXNativeTarget "KissXML (watchOS)" */ = {
 			isa = XCConfigurationList;
@@ -1090,6 +1110,7 @@
 				62E5E71A1F04E0CF006638AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D94131B71E5CEBE700189BD5 /* Build configuration list for PBXNativeTarget "KissXMLSwift (macOS)" */ = {
 			isa = XCConfigurationList;
