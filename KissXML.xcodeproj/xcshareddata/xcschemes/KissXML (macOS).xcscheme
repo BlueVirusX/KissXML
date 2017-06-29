@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D94131A31E5CEBE700189BD5"
+               BlueprintIdentifier = "62E5E6E71F04DFE7006638AF"
                BuildableName = "KissXML.framework"
                BlueprintName = "KissXML (macOS)"
                ReferencedContainer = "container:KissXML.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D94131A31E5CEBE700189BD5"
+            BlueprintIdentifier = "62E5E6E71F04DFE7006638AF"
             BuildableName = "KissXML.framework"
             BlueprintName = "KissXML (macOS)"
             ReferencedContainer = "container:KissXML.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D94131A31E5CEBE700189BD5"
+            BlueprintIdentifier = "62E5E6E71F04DFE7006638AF"
             BuildableName = "KissXML.framework"
             BlueprintName = "KissXML (macOS)"
             ReferencedContainer = "container:KissXML.xcodeproj">
